@@ -16,6 +16,8 @@ import { RegisterNewUserComponent } from './register-new-user/register-new-user.
 import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeComponent } from './home/home.component';
 
+import { ModalModule } from 'ngx-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,7 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

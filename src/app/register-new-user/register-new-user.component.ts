@@ -70,7 +70,4 @@ export class RegisterNewUserComponent implements OnInit {
         this.router.navigate(['/home']);
       });
     }
-
-
-
 }
