@@ -17,6 +17,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeComponent } from './home/home.component';
 
 import { ModalModule } from 'ngx-bootstrap';
+import { BlogPageComponent } from './blog-page/blog-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ModalModule } from 'ngx-bootstrap';
     NavbarComponent,
     RegisterNewUserComponent,
     AboutMeComponent,
-    HomeComponent
+    HomeComponent,
+    BlogPageComponent
   ],
   imports: [
     BrowserModule,
