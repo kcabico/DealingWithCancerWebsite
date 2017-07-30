@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { ModalDirective } from 'ngx-bootstrap/modal';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -26,7 +27,8 @@ export class NavbarComponent implements OnInit {
     this.isModalShown = false;
   }
 
-  constructor(public af: AngularFireAuth) {
+  constructor(public af: AngularFireAuth,
+            private router: Router) {
     this.auth = af.auth;
     this.model = { email: "", password: "" };
   }
@@ -37,13 +39,14 @@ export class NavbarComponent implements OnInit {
   public submit() {
   this.af.auth.signInWithEmailAndPassword(this.model.email, this.model.password).then((success) => {
     this.hideModal();
-    //this.router.navigate(['/home']);
+    this.router.navigate(['/home']);
     }).catch(alert)
   }
 
 
   public logout(){
     this.af.auth.signOut();
+    this.router.navigate(['/home']);
   }
 
 
