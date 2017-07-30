@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { RegisterNewUserComponent } from './register-new-user/register-new-user.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes =[
@@ -11,10 +12,10 @@ const routes: Routes =[
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  // {
-  //   path: 'home',
-  //   component:
-  // },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
   {
     path: 'register',
     component: RegisterNewUserComponent

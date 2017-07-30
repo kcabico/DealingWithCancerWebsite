@@ -67,7 +67,7 @@ export class RegisterNewUserComponent implements OnInit {
       }).catch((err) => {
           alert("There was an error: " + err);
       }).then((success) =>{
-      //  this.router.navigate(['/home']);
+        this.router.navigate(['/home']);
       });
     }
 

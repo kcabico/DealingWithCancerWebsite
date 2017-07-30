@@ -14,13 +14,15 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterNewUserComponent } from './register-new-user/register-new-user.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     RegisterNewUserComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
