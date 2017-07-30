@@ -18,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 
 import { ModalModule } from 'ngx-bootstrap';
 import { BlogPageComponent } from './blog-page/blog-page.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
     RegisterNewUserComponent,
     AboutMeComponent,
     HomeComponent,
-    BlogPageComponent
+    BlogPageComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
