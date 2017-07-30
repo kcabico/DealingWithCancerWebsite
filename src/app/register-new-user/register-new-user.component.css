@@ -1,0 +1,17 @@
+.form-control{
+  width: 500px
+}
+ul{
+  list-style-type: none;
+}
+.requiredInfo{
+  padding: 20px;
+}
+
+.userInfo{
+  padding: 20px;
+}
+
+h4{
+  font-weight: bold;
+}
