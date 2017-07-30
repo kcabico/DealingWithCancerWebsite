@@ -1,0 +1,53 @@
+<header>
+  <h2>Register an Account</h2>
+</header>
+
+<form
+  [formGroup] = "form"
+  (ngSubmit)="submit(form.value)">
+
+  <ul>
+    <div class="required">
+      <h3>Required Info</h3>
+
+      <div class="requiredInfo">
+        <li>
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" formControlName = "email" required/>
+        </li>
+        <li>
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password" formControlName = "password" required/>
+        </li>
+        <li>
+          <label for="name">Username</label>
+          <input type="text" class="form-control" name="username" id="username" placeholder="Username" formControlName ="username" required>
+        </li>
+      </div>
+    </div>
+
+    <div class="userInfo">
+      <h3>User Information</h3>
+      <br>
+      <div class="fullname">
+        <h4>Full Name</h4>
+        <li>
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" name="firstname" id="fname" placeholder="First Name" formControlName ="fname">
+        </li>
+        <li>
+          <label for="mi">Middle Initial</label>
+          <input type="text" class="form-control" name="mi" id="mi" placeholder="Middle Initial" formControlName ="mi">
+        </li>
+        <li>
+          <label for="lname">Last Name</label>
+          <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" formControlName ="lname">
+        </li>
+      </div>
+    </div>
+
+  </ul>
+
+  <br>
+  <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+</form>
