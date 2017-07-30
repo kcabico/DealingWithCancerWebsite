@@ -64,10 +64,10 @@ export class RegisterNewUserComponent implements OnInit {
       ).then(()=>{
         this.af.auth.currentUser.sendEmailVerification;
         alert("Sent Email verification");
-      }).catch((err) => {
-          alert("There was an error: " + err);
       }).then((success) =>{
         this.router.navigate(['/home']);
+      }).catch((err) => {
+          alert("There was an error: " + err);
       });
     }
 }
